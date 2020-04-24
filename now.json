@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "React-bookmarks",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
+
+  "routes": [
+    { "src": "/static/(*)", "header": { "cache-control": "s-saxage" } }
+  ]
+}
